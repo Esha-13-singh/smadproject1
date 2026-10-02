@@ -1,0 +1,28 @@
+h1 { background-color: paleturquoise; 
+	  font-family: "Julius Sans One", sans-serif; }
+
+p1 { background-color: paleturquoise; 
+	  font-family: "Julius Sans One", sans-serif; }
+
+ul { font-family: Georgia; }
+
+h2 { background-color: paleturquoise; 
+	  font-family: "Julius Sans One", sans-serif; 
+	  line-height: 1.5}
+
+p2 {font-family: Georgia; }
+
+p3 {font-family: Georgia; font-weight: bold; }
+
+p4 {font-family: Georgia; font-weight: bold; }
+
+table {font-family: Georgia; }
+
+.images-secion {
+	display: flex;
+	flex-direction: column;
+}
+
+.images-images {
+	display: flex;
+}
