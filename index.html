@@ -2,14 +2,22 @@
 <html lang="en">
 
 <head>
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+
 	<title>DANCELOG</title>
+	
 </head>
 
 <body>
 
 <h1>DANCELOG</h1>
 
-<p>Dance. Track. Improve.</p>
+
+<p1>Dance. Track. Improve.</p1>
 
 <ul>
 	<li>Home</li>
@@ -21,18 +29,27 @@
 
 <h2>Home</h2>
 
-<p>DANCELOG is the perfect place for all dancers. Logging practice, feelings, and goals becomes a breeze.</p>
+<dive class="container">
 
-<img src="dance1.jpg" alt="ballerina"
-style="width:300px;height:500px;">
+	<p2>DANCELOG is the perfect place for all dancers. Logging practice, feelings, and goals becomes a breeze.</p2><br>
 
-<img src="dance2.jpg" alt="dancer reaching"
-style="width:300px;height:500px;">
+	<br><div class="images">
+		<img src="dancelog/dance1.jpg" alt="ballerina"
+style="width:250px;height:410px;">
 
-<img src="dance3.jpg" alt="breakdancer"
-style="width:300px;height:500px;">
+		<img src="dance2.jpg" alt="dancer reaching"
+style="width:250px;height:410px;">
+
+		<img src="dance3.jpg" alt="breakdancer"
+style="width:250px;height:410px;">
+
+	</div>
+
+</div>
 
 <h2>Log</h2>
+
+<form> 
 
 <ul>
 <li>Date: <input type="text" name="date" value= "MM/DD/YY"></li>
@@ -40,7 +57,7 @@ style="width:300px;height:500px;">
 <li>Practice Time: <input type="text" name="time" value= "00:00"></li>
 </ul>
 
-<p>What Did You Work On? <em>(Select multiple)</em>:</p>
+<p3>What Did You Work On? <em>(Select multiple)</em>:</p3>
 <ul>
   <li><input type="checkbox" name="work" value="choreo">Choreography</li>
   <li><input type="checkbox" name="work" value="flex">Flexibility</li>
@@ -49,8 +66,7 @@ style="width:300px;height:500px;">
   <li><input type="checkbox" name="work" value="tech">Technique</li>
 </ul>
 
-<p>Number</p>
-<p>How Do You Feel?</p>
+<p4>How Do You Feel?</p4>
   <select name="quantity">
     <option value="1">1</option>
     <option value="1">2</option>
@@ -60,6 +76,8 @@ style="width:300px;height:500px;">
   </select>
 
 <input type="submit" value="submit">
+
+</form>
 
 <h2>Goals</h2>
 
