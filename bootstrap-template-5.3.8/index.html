@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DANCELOG: log your dance practice, feelings, and goals.">
+    <meta name="author" content="YOUR NAME HERE">
+    <title>DANCELOG</title>
+
+   <!-- Bootstrap v5.3.8 -->
+   <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <!-- END LOADING BOOTSTRAP CSS -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+   <!-- Custom styles - add your own CSS to this stylesheet -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- ===== PAGE CONTAINER ===== -->
+    <div class="container">
+
+      <!-- ROW 1: MAIN HEADER -->
+      <div class="row">
+        <header class="col-12 py-4 text-center border-bottom">
+          <h1>DANCELOG</h1>
+          <p class="mb-0">Dance. Track. Improve.</p>
+        </header>
+      </div>
+
+      <!-- ROW 2: NAVIGATION -->
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-sm bg-body-tertiary border-bottom">
+            <div class="container-fluid">
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#log">Log</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#goals">Goals</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#progress">Progress</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- ROW 3: HOME (full-width column with carousel) -->
+      <div class="row my-5">
+        <div class="col-12">
+          <section id="home">
+            <h2 class="fw-bold">Home</h2>
+            <p>DANCELOG is the perfect place for all dancers. Logging practice, feelings, and goals becomes a breeze.</p>
+
+            <!-- Image carousel -->
+            <div id="danceCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#danceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#danceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#danceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="dance1copy.jpg" class="d-block mx-auto" alt="ballerina" style="width:250px;height:410px;">
+                </div>
+                <div class="carousel-item">
+                  <img src="dance2copy.jpg" class="d-block mx-auto" alt="dancer reaching" style="width:250px;height:410px;">
+                </div>
+                <div class="carousel-item">
+                  <img src="dance3copy.jpg" class="d-block mx-auto" alt="breakdancer" style="width:250px;height:410px;">
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#danceCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#danceCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- ROW 4: THREE COLUMNS (Log / Goals / Progress) -->
+      <div class="row g-4 mb-5">
+
+        <!-- Column 1: Log -->
+        <div class="col-12 col-lg-4">
+          <section id="log">
+            <h2 class="fw-bold">Log</h2>
+            <form>
+              <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YY">
+              </div>
+              <div class="mb-3">
+                <label for="dancestyle" class="form-label">Style</label>
+                <input type="text" class="form-control" id="dancestyle" name="dancestyle" placeholder="Hip Hop">
+              </div>
+              <div class="mb-3">
+                <label for="time" class="form-label">Practice time</label>
+                <input type="text" class="form-control" id="time" name="time" placeholder="00:00">
+              </div>
+
+              <fieldset class="mb-3">
+                <legend class="fs-6">What did you work on? <em>(Select multiple)</em></legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="work" value="choreo" id="work-choreo">
+                  <label class="form-check-label" for="work-choreo">Choreography</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="work" value="flex" id="work-flex">
+                  <label class="form-check-label" for="work-flex">Flexibility</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="work" value="tricks" id="work-tricks">
+                  <label class="form-check-label" for="work-tricks">Tricks</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="work" value="condition" id="work-condition">
+                  <label class="form-check-label" for="work-condition">Conditioning</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="work" value="tech" id="work-tech">
+                  <label class="form-check-label" for="work-tech">Technique</label>
+                </div>
+              </fieldset>
+
+              <div class="mb-3">
+                <label for="feeling" class="form-label">How do you feel?</label>
+                <select class="form-select" id="feeling" name="feeling">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-save">Save entry</button>
+            </form>
+          </section>
+        </div>
+
+                <!-- Column 2: Goals -->
+        <div class="col-12 col-lg-4">
+          <section id="goals">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title fw-bold">Goals</h2>
+                <form>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="goal" value="splits" id="goal-splits">
+                    <label class="form-check-label" for="goal-splits">Get my splits</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="goal" value="headspring" id="goal-headspring">
+                    <label class="form-check-label" for="goal-headspring">Get a headspring</label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" name="goal" value="choreography" id="goal-choreography">
+                    <label class="form-check-label" for="goal-choreography">Master choreography</label>
+                  </div>
+
+                  <button type="button" class="btn btn-outline-primary btn-add mb-4">+ Add goal</button>
+
+                  <!-- Notes -->
+                  <h3 class="h5 fw-bold">Notes</h3>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Write your notes here" id="goalNotes" name="notes" style="height: 120px"></textarea>
+                    <label for="goalNotes">Notes on your goals</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-save">Save notes</button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Column 3: Progress -->
+        <div class="col-12 col-lg-4">
+          <section id="progress">
+            <h2 class="fw-bold">Progress</h2>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Style</th>
+                    <th scope="col">Feeling</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>September 10</td><td>Hip Hop</td><td>5</td></tr>
+                  <tr><td>September 8</td><td>Jazz</td><td>3</td></tr>
+                  <tr><td>September 7</td><td>Jazz</td><td>4</td></tr>
+                  <tr><td>September 3</td><td>Strength and Flexibility</td><td>3</td></tr>
+                  <tr><td>September 1</td><td>Hip Hop</td><td>4</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- ROW 5: FOOTER -->
+      <div class="row">
+        <footer class="col-12 py-4 text-center border-top bg-body-tertiary">
+          <p class="mb-1 fw-bold">DANCELOG</p>
+          <p class="mb-0 text-body-secondary">Dance. Track. Improve. &copy; 2026</p>
+        </footer>
+      </div>
+
+    </div>
+    <!-- ===== END PAGE CONTAINER ===== -->
+
+<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+
+  </body>
+</html>

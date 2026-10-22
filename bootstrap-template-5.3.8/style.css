@@ -1,0 +1,54 @@
+/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+h1 { background-color: paleturquoise; 
+	  font-family: "Julius Sans One", sans-serif; }
+
+p1 { background-color: paleturquoise; 
+	  font-family: "Julius Sans One", sans-serif; }
+
+ul { font-family: Georgia; }
+
+h2 { background-color: paleturquoise; 
+	  font-family: "Julius Sans One", sans-serif; 
+	  line-height: 1.5}
+
+p2 {font-family: Georgia; }
+
+p3 {font-family: Georgia; font-weight: bold; }
+
+p4 {font-family: Georgia; font-weight: bold; }
+
+/* Navigation hover */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  background-color: paleturquoise;
+  color: #000;
+}
+
+/* Save buttons */
+.btn-save {
+  --bs-btn-bg: teal;
+  --bs-btn-border-color: teal;
+  --bs-btn-color: #fff;
+
+  --bs-btn-hover-bg: darkcyan;
+  --bs-btn-hover-border-color: darkcyan;
+  --bs-btn-hover-color: #fff;
+
+  --bs-btn-active-bg: darkslategray;
+  --bs-btn-active-border-color: darkslategray;
+  --bs-btn-active-color: #fff;
+}
+
+/* Add goal button */
+.btn-add {
+  --bs-btn-color: teal;
+  --bs-btn-border-color: teal;
+
+  --bs-btn-hover-bg: paleturquoise;
+  --bs-btn-hover-border-color: teal;
+  --bs-btn-hover-color: #000;
+
+  --bs-btn-active-bg: teal;
+  --bs-btn-active-border-color: teal;
+  --bs-btn-active-color: #fff;
+}
