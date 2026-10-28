@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!--
+AI Use Disclosure:
+Tool(s): Claude (free version)
+Purpose: Helped code for me.
+Human Role: I selected the layout, colors, what I wanted for certain elements (card for goals), and verified responsiveness manually.
+-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="DANCELOG: log your dance practice, feelings, and goals.">
@@ -95,69 +101,92 @@
         </div>
       </div>
 
-      <!-- ROW 4: THREE COLUMNS (Log / Goals / Progress) -->
+      <!-- ROW 4: THREE SECTIONS (Log / Goals / Progress) -->
       <div class="row g-4 mb-5">
 
         <!-- Column 1: Log -->
-        <div class="col-12 col-lg-4">
-          <section id="log">
-            <h2 class="fw-bold">Log</h2>
-            <form>
-              <div class="mb-3">
-                <label for="date" class="form-label">Date</label>
-                <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YY">
-              </div>
-              <div class="mb-3">
-                <label for="dancestyle" class="form-label">Style</label>
-                <input type="text" class="form-control" id="dancestyle" name="dancestyle" placeholder="Hip Hop">
-              </div>
-              <div class="mb-3">
-                <label for="time" class="form-label">Practice time</label>
-                <input type="text" class="form-control" id="time" name="time" placeholder="00:00">
-              </div>
+        <div class="col-12">
+  <section id="log">
+    <div class="card">
+      <div class="card-body">
 
-              <fieldset class="mb-3">
-                <legend class="fs-6">What did you work on? <em>(Select multiple)</em></legend>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="work" value="choreo" id="work-choreo">
-                  <label class="form-check-label" for="work-choreo">Choreography</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="work" value="flex" id="work-flex">
-                  <label class="form-check-label" for="work-flex">Flexibility</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="work" value="tricks" id="work-tricks">
-                  <label class="form-check-label" for="work-tricks">Tricks</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="work" value="condition" id="work-condition">
-                  <label class="form-check-label" for="work-condition">Conditioning</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="work" value="tech" id="work-tech">
-                  <label class="form-check-label" for="work-tech">Technique</label>
-                </div>
-              </fieldset>
+        <h2 class="card-title fw-bold">Log</h2>
 
-              <div class="mb-3">
-                <label for="feeling" class="form-label">How do you feel?</label>
-                <select class="form-select" id="feeling" name="feeling">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
+        <form>
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YY">
+          </div>
 
-              <button type="submit" class="btn btn-primary btn-save">Save entry</button>
-            </form>
-          </section>
-        </div>
+          <div class="mb-3">
+            <label for="dancestyle" class="form-label">Style</label>
+            <input type="text" class="form-control" id="dancestyle" name="dancestyle" placeholder="Hip Hop">
+          </div>
+
+          <div class="mb-3">
+            <label for="time" class="form-label">Practice time</label>
+            <input type="text" class="form-control" id="time" name="time" placeholder="00:00">
+          </div>
+
+          <fieldset class="mb-3">
+            <legend class="fs-6">What did you work on? <em>(Select multiple)</em></legend>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="work" value="choreo" id="work-choreo">
+              <label class="form-check-label" for="work-choreo">Choreography</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="work" value="flex" id="work-flex">
+              <label class="form-check-label" for="work-flex">Flexibility</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="work" value="tricks" id="work-tricks">
+              <label class="form-check-label" for="work-tricks">Tricks</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="work" value="condition" id="work-condition">
+              <label class="form-check-label" for="work-condition">Conditioning</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="work" value="tech" id="work-tech">
+              <label class="form-check-label" for="work-tech">Technique</label>
+            </div>
+          </fieldset>
+
+          <div class="mb-3">
+            <label for="feeling" class="form-label">How do you feel?</label>
+            <select class="form-select" id="feeling" name="feeling">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="mb-3">
+              <label for="practiceNotes" class="form-label">Notes</label>
+              <textarea class="form-control"
+                 id="practiceNotes"
+                 name="practiceNotes"
+                 rows="5"
+                 placeholder="How did practice go today?"></textarea>
+</div>
+          <button type="submit" class="btn btn-primary btn-save">
+            Save entry
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+</div>
 
                 <!-- Column 2: Goals -->
-        <div class="col-12 col-lg-4">
+        <div class="col-12">
           <section id="goals">
             <div class="card">
               <div class="card-body">
@@ -178,13 +207,6 @@
 
                   <button type="button" class="btn btn-outline-primary btn-add mb-4">+ Add goal</button>
 
-                  <!-- Notes -->
-                  <h3 class="h5 fw-bold">Notes</h3>
-                  <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Write your notes here" id="goalNotes" name="notes" style="height: 120px"></textarea>
-                    <label for="goalNotes">Notes on your goals</label>
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-save">Save notes</button>
                 </form>
               </div>
             </div>
@@ -192,31 +214,56 @@
         </div>
 
         <!-- Column 3: Progress -->
-        <div class="col-12 col-lg-4">
-          <section id="progress">
-            <h2 class="fw-bold">Progress</h2>
-            <div class="table-responsive">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">Style</th>
-                    <th scope="col">Feeling</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>September 10</td><td>Hip Hop</td><td>5</td></tr>
-                  <tr><td>September 8</td><td>Jazz</td><td>3</td></tr>
-                  <tr><td>September 7</td><td>Jazz</td><td>4</td></tr>
-                  <tr><td>September 3</td><td>Strength and Flexibility</td><td>3</td></tr>
-                  <tr><td>September 1</td><td>Hip Hop</td><td>4</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
+<div class="col-12">
+  <section id="progress">
+    <div class="card">
+      <div class="card-body">
+
+        <h2 class="card-title fw-bold">Progress</h2>
+
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Style</th>
+                <th scope="col">Feeling</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>September 10</td>
+                <td>Hip Hop</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>September 8</td>
+                <td>Jazz</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>September 7</td>
+                <td>Jazz</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>September 3</td>
+                <td>Strength and Flexibility</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>September 1</td>
+                <td>Hip Hop</td>
+                <td>4</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
       </div>
+    </div>
+  </section>
+</div>
 
       <!-- ROW 5: FOOTER -->
       <div class="row">
@@ -228,7 +275,7 @@
 
     </div>
     <!-- ===== END PAGE CONTAINER ===== -->
-
+</div>
 <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <!-- END LOADING BOOTSTRAP JAVASCRIPT -->

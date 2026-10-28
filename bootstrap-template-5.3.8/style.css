@@ -1,13 +1,22 @@
 /* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
-h1 { background-color: paleturquoise; 
+
+/* Home and cards only */
+#home,
+#log .card,
+#goals .card,
+#progress .card {
+  background-color: #CDE3EB;
+}
+
+h1 { background-color: #8BB6CC; 
 	  font-family: "Julius Sans One", sans-serif; }
 
-p1 { background-color: paleturquoise; 
+p1 { background-color: #8BB6CC; 
 	  font-family: "Julius Sans One", sans-serif; }
 
 ul { font-family: Georgia; }
 
-h2 { background-color: paleturquoise; 
+h2 { background-color: #8BB6CC; 
 	  font-family: "Julius Sans One", sans-serif; 
 	  line-height: 1.5}
 
@@ -20,18 +29,18 @@ p4 {font-family: Georgia; font-weight: bold; }
 /* Navigation hover */
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  background-color: paleturquoise;
+  background-color: #CDE3EB;
   color: #000;
 }
 
 /* Save buttons */
 .btn-save {
-  --bs-btn-bg: teal;
-  --bs-btn-border-color: teal;
+  --bs-btn-bg: #224453;
+  --bs-btn-border-color: #224453;
   --bs-btn-color: #fff;
 
-  --bs-btn-hover-bg: darkcyan;
-  --bs-btn-hover-border-color: darkcyan;
+  --bs-btn-hover-bg: #224453;
+  --bs-btn-hover-border-color: #224453;
   --bs-btn-hover-color: #fff;
 
   --bs-btn-active-bg: darkslategray;
@@ -41,14 +50,14 @@ p4 {font-family: Georgia; font-weight: bold; }
 
 /* Add goal button */
 .btn-add {
-  --bs-btn-color: teal;
-  --bs-btn-border-color: teal;
+  --bs-btn-color: #224453;
+  --bs-btn-border-color: #224453;
 
-  --bs-btn-hover-bg: paleturquoise;
-  --bs-btn-hover-border-color: teal;
+  --bs-btn-hover-bg: #8BB6CC;
+  --bs-btn-hover-border-color: #224453;
   --bs-btn-hover-color: #000;
 
-  --bs-btn-active-bg: teal;
-  --bs-btn-active-border-color: teal;
+  --bs-btn-active-bg: #224453;
+  --bs-btn-active-border-color: #224453;
   --bs-btn-active-color: #fff;
 }
